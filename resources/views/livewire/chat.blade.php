@@ -51,7 +51,7 @@
                         </div>
                         <br>
                         <div class="input-group">
-                        <input type="text" class="form-control" wire:model='pesan'>
+                        <input type="text" class="form-control" wire:model='pesan' wire:keydown.enter='kirimPesan'>
                         <button wire:click="kirimPesan" class="btn btn-primary">kirim</button>
                     </div>
                     @endif
